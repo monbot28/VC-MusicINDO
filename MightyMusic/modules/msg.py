@@ -9,17 +9,18 @@
 import os
 from MightyMusic.config import ASSISTANT_NAME,PROJECT_NAME,SUPPORT_GROUP,OWNER_USERNAME
 class Messages():
-      START_MSG = "**Hallo** [{}](tg://user?id={}) !\n━━━━━━━━━━━━━━━━━━━━━━━━\n📮 Saya adalah bot canggih yang dibuat untuk memutar musik di obrolan suara Grup & Saluran Channel Telegram.\n\n📝 Ketik /help untuk mendapat info dari saya.\n━━━━━━━━━━━━━━━━━━━━━━━━\n🎻 Selamat menikmati sensasi mendengarkan musik di VC GROUP/ CHANNEL Kamu\n\n• Owner : [MON](https://t.me/mondisini)"
+      START_MSG = "**Hallo** [{}](tg://user?id={}) !\n━━━━━━━━━━━━━━━━━━━━━━━━\n📮 Saya adalah bot canggih yang dibuat untuk memutar musik di obrolan suara Grup & Saluran Channel Telegram.\n\n📝 Ketik /help untuk mendapat info dari saya.\n━━━━━━━━━━━━━━━━━━━━━━━━\n🎻 Selamat menikmati sensasi mendengarkan musik di VC GROUP/ CHANNEL Kamu\n\n❃ Owner : [MON](https://t.me/mondisini)"
       HELP_MSG = [
         ".",
 f"""
-**Hy lagi kamu bertemu lagi dengan saya {PROJECT_NAME}
+**Hai lagi kamu bertemu lagi dengan saya {PROJECT_NAME}
 
-⚪️ {PROJECT_NAME} bisa memutar musik baik itu di VC Group atau VC Channel
+❃ {PROJECT_NAME} bisa memutar musik baik itu di VC Group atau VC Channel
 
-⚪️ Nama Asisten >> @{ASSISTANT_NAME}\n\nKlik tombol dibawah untuk melihat intruksi lain**
-◎› Owner Bot     >> Mon 
-◎› Owner Project >> @mondisini
+❃ Nama Asisten >> @{ASSISTANT_NAME}\n\nKlik tombol dibawah untuk melihat intruksi lain**
+
+◎› Owner Bot   : [MON](https://t.me/mondisini)
+
 """,
 
 f"""
@@ -61,7 +62,7 @@ __**Cmd player dan semua cmd lain kecuali**__ /play, /current __**dan**__ /playl
 f"""
 **◎› Putar Musik Di Channel 📮**
 
-⚪️ Hanya untuk admin grup tertaut:
+❃ Hanya untuk admin grup tertaut:
 
 • /cplay [song name] - putar lagu yang Anda minta
 • /cdplay [song name] - putar lagu yang Anda minta via deezer
@@ -77,7 +78,7 @@ f"""
 
 saluran Channel juga dapat digunakan sebagai pengganti c ( /cplay = /channelplay )
 
-⚪️ Jika Anda tidak suka bermain di grup tertaut:
+❃ Jika Anda tidak suka bermain di grup tertaut:
 
 1) Dapatkan ID saluran Anda.
 2) Buat grup dengan judul: Channel Music: your_channel_id
