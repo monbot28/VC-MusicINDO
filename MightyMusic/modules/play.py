@@ -182,9 +182,9 @@ def r_ply(type_):
                 InlineKeyboardButton("⏭", "skip"),
             ],
             [
-                InlineKeyboardButton("Playlist 📖", "playlist"),
+                InlineKeyboardButton("📖 ᴘʟᴀʏʟɪsᴛ", "playlist"),
             ],
-            [InlineKeyboardButton("❌ Tutup", "cls")],
+            [InlineKeyboardButton("🗑️ ᴄʟᴏsᴇ", "cls")],
         ]
     )
     return mar
@@ -351,9 +351,9 @@ async def m_cb(b, cb):
                     InlineKeyboardButton("⏭", "skip"),
                 ],
                 [
-                    InlineKeyboardButton("Playlist 📖", "playlist"),
+                    InlineKeyboardButton("📖 ᴘʟᴀʏʟɪsᴛ", "playlist"),
                 ],
-                [InlineKeyboardButton("🗑 Tutup", "cls")],
+                [InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", "cls")],
             ]
         )
         await cb.message.edit(stats, reply_markup=marr)
@@ -487,10 +487,10 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                    InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
+                    InlineKeyboardButton("📖 ᴘʟᴀʏʟɪsᴛ", callback_data="playlist"),
+                    InlineKeyboardButton("ᴍᴇɴᴜ ⏯ ", callback_data="menu"),
                 ],
-                [InlineKeyboardButton(text="🗑 Tutup", callback_data="cls")],
+                [InlineKeyboardButton(text="🗑 ᴄʟᴏsᴇ", callback_data="cls")],
             ]
         )
         file_name = get_file_name(audio)
@@ -534,12 +534,11 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Playlist", callback_data="playlist"),
-                    InlineKeyboardButton("Menu", callback_data="menu"),
+                    InlineKeyboardButton("📖 ᴘʟᴀʏʟɪsᴛ", callback_data="playlist"),
+                    InlineKeyboardButton("🌹 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/mondisini"),
                 ],
                 [
-                    InlineKeyboardButton(text="Owner", url=f"https://t.me/mondisini"),
-                    InlineKeyboardButton(text="Tutup", callback_data="cls")
+                    InlineKeyboardButton(text="🗑️ ᴄʟᴏsᴇ", callback_data="cls")
                 ],
             ]
         )
@@ -577,12 +576,11 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Playlist", callback_data="playlist"),
-                    InlineKeyboardButton("Menu", callback_data="menu"),
+                    InlineKeyboardButton("📖 ᴘʟᴀʏʟɪsᴛ", callback_data="playlist"),
+                    InlineKeyboardButton("🌹 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/mondisini"),
                 ],
                 [
-                    InlineKeyboardButton(text="Owner", url=f"https://t.me/mondisini"),
-                    InlineKeyboardButton(text="Tutup", callback_data="cls")
+                    InlineKeyboardButton(text="🗑️ ᴄʟᴏsᴇ", callback_data="cls")
                 ],
             ]
         )
@@ -714,11 +712,11 @@ async def deezer(client: Client, message_: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
+                InlineKeyboardButton("📖 ᴘʟᴀʏʟɪsᴛ", callback_data="playlist"),
+                InlineKeyboardButton("🌹 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/mondisini"),
             ],
-            [InlineKeyboardButton(text="Dengarkan melalui Deezer 🎬", url=f"{url}")],
-            [InlineKeyboardButton(text="🗑 Tutup", callback_data="cls")],
+            [InlineKeyboardButton(text="🎬 ᴅᴇᴇᴢᴇʀ", url=f"{url}")],
+            [InlineKeyboardButton(text="🗑 ᴄʟᴏsᴇ", callback_data="cls")],
         ]
     )
     file_path = await convert(wget.download(url))
@@ -841,16 +839,13 @@ async def jiosaavn(client: Client, message_: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
+              InlineKeyboardButton("📖 ᴘʟᴀʏʟɪsᴛ", callback_data="playlist"),
+              InlineKeyboardButton("🌹 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/mondisini"),
             ],
             [
-                InlineKeyboardButton(
-                    text="Join Updates Channel", url=f"https://t.me/{updateschannel}"
-                )
+              InlineKeyboardButton(text="🗑️ ᴄʟᴏsᴇ", callback_data="cls")
             ],
-            [InlineKeyboardButton(text="🗑 Tutup", callback_data="cls")],
-        ]
+         ]
     )
     file_path = await convert(wget.download(slink))
     chat_id = get_chat_id(message_.chat)
